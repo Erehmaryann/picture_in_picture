@@ -13,3 +13,7 @@ body {
   justify-content: center;
   background: rgb(37, 37, 37);
 }
+
+.button-container {
+  border: 2px solid black;
+}
