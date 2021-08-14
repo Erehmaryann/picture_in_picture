@@ -20,4 +20,7 @@ async function selectMediaStream() {
 // On load
 selectMediaStream();
 
-button.addEventListener("click", () => {});
+button.addEventListener("click", async () => {
+  // Disable button on click
+  button.disabled = true;
+});
