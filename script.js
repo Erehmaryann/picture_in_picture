@@ -4,7 +4,7 @@ const button = document.getElementById("button");
 // Prompt a user to select media stream, pass to the video element, then play.
 async function selectMediaStream() {
   try {
-    //To get live stream
+    //To get live stream using a web api
     const mediaStream = await navigator.mediaDevices.getDisplayMedia();
     // assigning source attribute to videoElement
     videoElement.srcObject = mediaStream;
