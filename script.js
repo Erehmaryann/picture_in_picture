@@ -19,3 +19,5 @@ async function selectMediaStream() {
 
 // On load
 selectMediaStream();
+
+button.addEventListener("click", () => {});
