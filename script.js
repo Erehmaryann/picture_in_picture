@@ -6,6 +6,12 @@ async function selectMediaStream() {
   try {
     //To get live stream
     const mediaStream = await navigator.mediaDevices.getDisplayMedia();
+    // assigning source attribute to videoElement
+    videoElement.srcObject = mediaStream;
+    //returns true when it has finish loading
+    videoElement.onloadedmetadata = () => {
+      videoElement.play();
+    };
   } catch (e) {
     //Catch Error here
   }
